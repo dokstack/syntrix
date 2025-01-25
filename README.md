@@ -1,6 +1,7 @@
-# Syntrix VS Code Extension
+# Syntrix: A Simple Visual Language for Web Development
+Syntrix is a domain-specific language (DSL) designed to simplify the creation of web interfaces. It provides a concise and intuitive syntax that compiles directly to HTML and CSS, allowing developers to focus on building the structure and styling of their web applications without getting bogged down in complex markup.
 
-## Features
+## Key Features
 - Simple and intuitive syntax for defining web pages, cards, text, buttons, inputs, and more
 - Compiles Syntrix code directly to HTML and CSS
 - Syntax highlighting in VS Code for .sx files
