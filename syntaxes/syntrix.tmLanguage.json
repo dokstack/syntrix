@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Syntrix",
+    "patterns": [
+        {
+            "include": "#keywords"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                "match": "^\\s*(>>)\\s*(page|card|text|button|input|end)\\s*([a-zA-Z0-9_]+)?",
+                "captures": {
+                    "1": {"name": "keyword.control.syntrix"},
+                    "2": {"name": "storage.type.syntrix"},
+                    "3": {"name": "entity.name.function.syntrix"}
+                }
+            },
+            {
+                "match": "^\\s*(::)\\s*([a-zA-Z-]+)\\s*(=)\\s*(.+)$",
+                "captures": {
+                    "1": {"name": "keyword.operator.syntrix"},
+                    "2": {"name": "support.type.property-name.syntrix"},
+                    "3": {"name": "keyword.operator.assignment.syntrix"},
+                    "4": {"name": "string.unquoted.syntrix"}
+                }
+            }]
+        }
+    },
+    "scopeName": "source.syntrix"
+}
